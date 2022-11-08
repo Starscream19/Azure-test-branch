@@ -1,0 +1,131 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.0",
+      "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.0",
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.0",
+      "System.Net.Http.Json >= 3.2.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\sparsh.srivastava\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\sparsh.srivastava\\Downloads\\WeatherForecastPart1B\\WeatherForecast\\WeatherForecast.csproj",
+      "projectName": "WeatherForecast",
+      "projectPath": "C:\\Users\\sparsh.srivastava\\Downloads\\WeatherForecastPart1B\\WeatherForecast\\WeatherForecast.csproj",
+      "packagesPath": "C:\\Users\\sparsh.srivastava\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sparsh.srivastava\\Downloads\\WeatherForecastPart1B\\WeatherForecast\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\sparsh.srivastava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://artifactory-346222662.us-east-1.elb.amazonaws.com/artifactory/api/nuget/nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": {
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
+          "Microsoft.AspNetCore.Components.WebAssembly.Build": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
+          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
+          "System.Net.Http.Json": {
+            "target": "Package",
+            "version": "[3.2.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "NETStandard.Library": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://artifactory-346222662.us-east-1.elb.amazonaws.com/artifactory/api/nuget/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.AspNetCore.Components.WebAssembly.Build' from remote source 'https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components.webassembly.build/index.json'.",
+      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly.Build"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.AspNetCore.Components.WebAssembly.DevServer' from remote source 'https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components.webassembly.devserver/index.json'.",
+      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly.DevServer"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.AspNetCore.Components.WebAssembly' from remote source 'https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components.webassembly/index.json'.",
+      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'System.Net.Http.Json' from remote source 'https://api.nuget.org/v3-flatcontainer/system.net.http.json/index.json'.",
+      "libraryId": "System.Net.Http.Json"
+    }
+  ]
+}

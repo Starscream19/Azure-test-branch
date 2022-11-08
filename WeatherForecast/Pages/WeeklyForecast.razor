@@ -1,0 +1,62 @@
+﻿@page "/weeklyforecast"
+@*Alway place your page directives at the top of the file
+    Remember the page directive defines the component's
+    page route giving it a URL which can be navigated to in
+    the browser.
+    Even though the @page directive enables routing, it does not
+    change our ability to use the component as a basic building
+    block for other components or pages*@
+
+<h3>Weekly Forecast</h3>
+
+@*We are going to create a UI which initially displays a day
+    of weather forecast data.
+    We'll use hard coded values which will eventually be replaced
+    with data
+    Later we will take this prototype and decide where components
+    can be abstracted into reusuable bits.*@
+
+@*Here we are using the Bootstrap card class to give a nice
+    appearance
+    Inside the card's body we are using a span element with the
+    Open Iconic classes io io-rain, this will render an icon
+    which represents the weather status (see wwwroot folder)
+    Go here for more details https://useiconic.com/open*@
+
+
+@*Part1B
+    Our page is taking shape, however we're building a weekly forecast and we 
+    currently have a single day. So we are going to modify the page
+    so it can display five days of forecast data.
+    Since we are repeating the cards we'll wrap the display in a 
+    flex-box container... from Bootstrap we use the class d-flex
+    We repeat the display with a foreach loop ... relying on Razor
+    
+    ... Also with multiple cards being displayed we are removing
+    the static width "width:18rem" and letting the element expand
+    as needed. To create some whitespace m-2 or margin 2 CSS class is add*@
+
+<div class="d-flex">
+
+    @foreach (var item in Enumerable.Range(1, 5))
+    {
+
+        <div class="card bg-light m-2">
+
+            <div class="card-body text-center">
+
+                <span class="h1 oi oi-rain"></span>
+                <h1 class="card-title">17 C&deg;</h1>
+                <p class="card-text">
+                    Rainy weather expected Monday
+                </p>
+
+            </div>
+
+        </div>
+    }
+</div>
+
+@code {
+
+}
